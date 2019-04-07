@@ -45,13 +45,12 @@ $matches = [];
 include_once('util.php');
 
 
-$myArr = [3,2,4,5,1];
+$myArr = [8,9,3,2,4,5,1];
+printArray($myArr, 'начальный');
 
-$count = bubblesSort($myArr);
+$count = shellSort($myArr);
 
-echo 'Всего итераций: ' . $count;
-
-
+//echo 'Всего итераций: ' . $count;
 
 echo '<pre>';
 print_r($myArr);

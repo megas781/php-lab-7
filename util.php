@@ -91,6 +91,30 @@ function bubblesSort(&$arr) {
 }
 
 //Алгоритм Шелла
+function shellSort(&$arr) {
+    $size = count($arr);
+    $d = floor($size / 2);
+
+    $iterationCount = 0;
+
+    while ($d > 0) {
+        for ($i = 0; $i < $size - $d; $i++) {
+            $j = $i;
+
+            while (($j >= 0) && $arr[$j] > $arr[$j + $d]) {
+                $temp = $arr[$j];
+                $arr[$j] = $arr[$j + $d];
+                $arr[$j + $d] = $temp;
+                $j = $j - $d;
+
+                $iterationCount += 1;
+                printArray($arr, 'Итерация ' . $iterationCount);
+            }
+        }
+        $d = floor($d / 2);
+    }
+
+}
 
 
 
