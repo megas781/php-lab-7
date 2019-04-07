@@ -33,9 +33,15 @@ $matches = [];
 
 //echo '1,2' + 1;
 
-$file = include "modules/ReplyModule/MailReplyView.php";
+//$file = include "modules/ReplyModule/MailReplyView.php";
 
-echo $file;
+//echo $file;
+
+if (empty(['key' => ''])) {
+    echo 'пустой!';
+} else {
+    echo 'по ключу есть пустая строка';
+}
 
 //echo '<pre>';
 //print_r($matches);

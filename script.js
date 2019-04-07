@@ -12,11 +12,10 @@ addButton.addEventListener('click', function (e) {
     newItem.appendChild(document.createElement('td'));
 
     newItem.children[0].textContent = '[' + count + ']';
+    newItem.children[1].innerHTML = `<td><input type="text" name="arr[${count}]" class="arr-item__input"></td>`;
+
     count += 1;
     document.querySelector('#arr-form input[name=count]').value = count;
-
-
-    newItem.children[1].innerHTML = `<td><input type="text" class="arr-item__input"></td>`;
 
     elementTable.appendChild(newItem);
 

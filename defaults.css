@@ -50,6 +50,10 @@ nav, header, footer {
     align-items: center;
 }
 
+input {
+    font-size: 14px;
+}
+
 ._flex-row {
     flex-direction: row;
 }
@@ -187,5 +191,6 @@ main {
     /*margin-bottom: 16px;*/
     margin: 16px 200px;
 }
+
 
 

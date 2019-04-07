@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 
 define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/php-lab-7/');
-define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/')
+define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
 //echo SITE_ROOT;
 
 ?>
@@ -15,7 +15,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/')
 
 <!--Путь work-area будет здесь-->
 
-<form action="output.php" method="get" target="_blank" id="arr-form">
+<form action="output.php" method="post" target="_blank" id="arr-form">
 
     <input type="hidden" name="count" value="1">
 
@@ -24,7 +24,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/')
     <table id="arr-items-input-view">
         <tr class="arr-item">
             <td class="arr-item__index">[0]</td>
-            <td><input type="text" class="arr-item__input"></td>
+            <td><input type="text" name="arr[0]" class="arr-item__input"></td>
         </tr>
     </table>
 
