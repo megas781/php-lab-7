@@ -9,9 +9,9 @@ define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . '/php-lab-7/');
 define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
 //echo SITE_ROOT;
 
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+//echo '<pre>';
+//print_r($_POST);
+//echo '</pre>';
 
 ?>
 
@@ -59,50 +59,6 @@ for ($i = 0; $i < $count; $i++) {
     }
 }
 
-//Здесь мы знаем, что массив валидный. Пора начать обрабатывать через switch.
-//$arr = [
-//        4,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5,
-//    5
-//];
 
 include_once 'util.php';
 
@@ -129,6 +85,9 @@ $startTime = microtime(true);
 switch ($algorithm) {
     case 'select':
         $iterationCount = selectSort($arr);
+        break;
+    case 'bubbles':
+        $iterationCount = bubblesSort($arr);
         break;
     case 'embedded':
         break;
