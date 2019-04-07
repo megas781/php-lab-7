@@ -53,7 +53,7 @@ function selectSort(&$arr) {
 
 function bubblesSort(&$arr) {
 
-    $count = 0;
+    $iterationCount = 0;
 
 
     for ($i = 0; $i < count($arr); $i++) {
@@ -73,8 +73,8 @@ function bubblesSort(&$arr) {
                 $changeCount += 1;
             }
 
-            $count += 1;
-            printArray($arr, 'Итерация ' . ($count));
+            $iterationCount += 1;
+            printArray($arr, 'Итерация ' . ($iterationCount));
 
         }
 
@@ -87,7 +87,7 @@ function bubblesSort(&$arr) {
 
     }
 
-    return $count;
+    return $iterationCount;
 }
 
 //Алгоритм Шелла
@@ -113,6 +113,8 @@ function shellSort(&$arr) {
         }
         $d = floor($d / 2);
     }
+
+    return $iterationCount;
 
 }
 

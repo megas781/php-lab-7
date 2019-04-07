@@ -89,6 +89,8 @@ switch ($algorithm) {
     case 'bubbles':
         $iterationCount = bubblesSort($arr);
         break;
+    case 'shell':
+        $iterationCount = shellSort($arr);
     case 'embedded':
         break;
     default:
