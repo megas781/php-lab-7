@@ -37,10 +37,10 @@ $matches = [];
 
 //echo $file;
 
-if (empty(['key' => ''])) {
-    echo 'пустой!';
+if (preg_match('~^\d+(?:$|[\.,]\d+$)~', trim('   0.01',' '))) {
+    echo 'совпадает';
 } else {
-    echo 'по ключу есть пустая строка';
+    echo 'не совпадает';
 }
 
 //echo '<pre>';
