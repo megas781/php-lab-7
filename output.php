@@ -24,8 +24,20 @@ echo '</pre>';
 
 //Пока что путь будет эмулированным
 //А по идеи здесь мы достаём то, что есть в post
-$arr = $_POST['arr'];
-$count = $_POST['count'];
+
+if (isset($_POST['arr'])) {
+    $arr = $_POST['arr'];
+} else {
+    echo 'Массив не был передан';
+    goto stop_working_and_load_footer;
+}
+if (isset($_POST['arr'])) {
+    $count = $_POST['count'];
+} else {
+    echo 'Параметр count не был передан';
+    goto stop_working_and_load_footer;
+}
+
 
 
 //Валидируем массив из post
@@ -47,16 +59,7 @@ for ($i = 0; $i < $count; $i++) {
     }
 }
 
-//if (empty($arr)) {
-//    echo 'Ошибка: введён пустой массив';
-//    die();
-//} elseif (false) {
-//    echo 'Ошибка: в массиве есть нечисловые значения';
-//    die();
-//} else {
-//    echo 'Валидация данных прошла успешно!<br>';
-//}
-
+include_once 'util.php';
 
 //Выбираем алгоритм
 $algorythm = 'newAlgo';

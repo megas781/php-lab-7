@@ -37,11 +37,16 @@ $matches = [];
 
 //echo $file;
 
-if (preg_match('~^\d+(?:$|[\.,]\d+$)~', trim('   0.01',' '))) {
-    echo 'совпадает';
-} else {
-    echo 'не совпадает';
-}
+//if (preg_match('~^\d+(?:$|[\.,]\d+$)~', trim('   0.01',' '))) {
+//    echo 'совпадает';
+//} else {
+//    echo 'не совпадает';
+//}
+include_once('util.php');
+
+
+
+
 
 //echo '<pre>';
 //print_r($matches);

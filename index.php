@@ -28,6 +28,17 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
         </tr>
     </table>
 
+    <div>
+        <select name="algorythm">
+            <option value="select">Сортировка выбором</option>
+            <option value="bubbles">Пузырьковый алгоритм</option>
+            <option value="shell">Алгоритм Шелла</option>
+            <option value="garden">Алгоритм садового гнома</option>
+            <option value="fast">Быстрая сортировка</option>
+            <option value="embedded">Встроенная сортировка PHP</option>
+        </select>
+    </div>
+
     <div id="form-bottom-controls">
         <input type="button" value="Добавить элемент" id="add-element-button">
         <input type="submit">
