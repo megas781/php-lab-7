@@ -1,0 +1,18 @@
+#arr-items-input-view {
+    width: 100%;
+}
+#arr-items-input-view td {
+    padding: 0;
+}
+.arr-item__input {
+    border: 1px solid #cfcfcf;
+    /*padding: 0;*/
+    width: 100%;
+}
+
+#form-bottom-controls {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 16px;
+}
