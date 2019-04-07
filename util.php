@@ -208,6 +208,8 @@ function quickSort(&$arr) {
 
     innerQuickSort($arr,0,count($arr) - 1, $iterationCount);
 
+    return $iterationCount;
+
 }
 
 //

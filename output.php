@@ -98,6 +98,7 @@ switch ($algorithm) {
     case 'quick':
         $iterationCount = quickSort($arr);
     case 'embedded':
+
         break;
     default:
         break;
