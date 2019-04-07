@@ -91,6 +91,12 @@ switch ($algorithm) {
         break;
     case 'shell':
         $iterationCount = shellSort($arr);
+        break;
+    case 'gnome':
+        $iterationCount = gnomeSort($arr);
+        break;
+    case 'quick':
+        $iterationCount = quickSort($arr);
     case 'embedded':
         break;
     default:

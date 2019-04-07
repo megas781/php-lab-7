@@ -48,9 +48,9 @@ include_once('util.php');
 $myArr = [8,9,3,2,4,5,1];
 printArray($myArr, 'начальный');
 
-$count = shellSort($myArr);
+$count = quickSort($myArr);
 
-//echo 'Всего итераций: ' . $count;
+echo 'Всего итераций: ' . $count;
 
 echo '<pre>';
 print_r($myArr);

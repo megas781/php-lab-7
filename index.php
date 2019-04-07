@@ -33,8 +33,8 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
             <option value="select">Сортировка выбором</option>
             <option value="bubbles">Пузырьковый алгоритм</option>
             <option value="shell">Алгоритм Шелла</option>
-            <option value="garden">Алгоритм садового гнома</option>
-            <option value="fast">Быстрая сортировка</option>
+            <option value="gnome">Алгоритм садового гнома</option>
+            <option value="quick">Быстрая сортировка</option>
             <option value="embedded">Встроенная сортировка PHP</option>
         </select>
     </div>
