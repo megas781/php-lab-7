@@ -15,7 +15,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/')
 
 <!--Путь work-area будет здесь-->
 
-<form action="output.php" method="get" target="_blank" class="arr-form">
+<form action="output.php" method="get" target="_blank" id="arr-form">
 
     <input type="hidden" name="count" value="1">
 
@@ -29,7 +29,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/')
     </table>
 
     <div id="form-bottom-controls">
-        <input type="button" value="Добавить элемент">
+        <input type="button" value="Добавить элемент" id="add-element-button">
         <input type="submit">
     </div>
 
