@@ -42,7 +42,7 @@ function selectSort(&$arr) {
         $arr[$i] = $currentMinValue;
 
         $count += 1;
-        printArray($arr, $i + 1 . ') ');
+        printArray($arr, 'Итерация ' . ($i + 1));
     }
 
     return $count;

@@ -65,9 +65,16 @@ for ($i = 0; $i < $count; $i++) {
 include_once 'util.php';
 
 //Выбираем алгоритм
-$algorythm = 'embedded';
+
+if (isset($_POST['algorithm'])) {
+    $algorithm = $_POST['algorithm'];
+} else {
+    echo 'Алгоритм не найден';
+    goto stop_working_and_load_footer;
+}
+
 //Нужно вывести его название. Hashmap сделаем потом. Пока что просто echo algorythm
-echo 'Название алгоритма: ' . $algorythm . '<br>';
+echo 'Название алгоритма: ' . $algorithm . '<br>';
 echo 'Входные данные:<br>';
 printArray($arr, 'Начальный массив'); echo '<br>';
 
@@ -78,11 +85,11 @@ $startTime = microtime(true);
 
 
 //В каждом case'e цикл и в конце каждой итерации выводим текущее состояние массива.
-switch ($algorythm) {
+switch ($algorithm) {
+    case 'select':
+        $iterationCount = selectSort($arr);
+        break;
     case 'embedded':
-
-
-
         break;
     default:
         break;

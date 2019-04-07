@@ -29,7 +29,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
     </table>
 
     <div>
-        <select name="algorythm">
+        <select name="algorithm">
             <option value="select">Сортировка выбором</option>
             <option value="bubbles">Пузырьковый алгоритм</option>
             <option value="shell">Алгоритм Шелла</option>
