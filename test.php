@@ -47,7 +47,7 @@ include_once('util.php');
 
 $myArr = [3,2,4,5,1];
 
-$count = selectSort($myArr);
+$count = bubblesSort($myArr);
 
 echo 'Всего итераций: ' . $count;
 

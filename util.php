@@ -50,7 +50,34 @@ function selectSort(&$arr) {
 
 //Пузырьковая сортировка
 
+function bubblesSort(&$arr) {
+
+    $count = 0;
+
+    for ($i = 0; $i < count($arr); $i++) {
+
+        for ($j = 0; $j < count($arr) - 1; $j++) {
+
+            if ($arr[$j] > $arr[$j + 1]) {
+                $arr[$j] += $arr[$j + 1];
+                $arr[$j + 1] = $arr[$j] - $arr[$j + 1];
+                $arr[$j] = $arr[$j] - $arr[$j + 1];
+
+                printArray($arr, "&emsp;&emsp;Субитерация " . ($i + 1));
+            }
+
+        }
+        echo '<br>';
+        printArray($arr, 'Итерация ' . ($i + 1));
+        echo '<br>';
+    }
+
+    return $count;
+}
+
 //Алгоритм Шелла
+
+
 
 //Алгоритм садового гнома
 
