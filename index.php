@@ -21,6 +21,8 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
 
     <h3>Ввод элементов массива</h3>
 
+    <div><input type="button" value="Добавить элемент" class="add-element-button"></div>
+
     <table id="arr-items-input-view">
         <tr class="arr-item">
             <td class="arr-item__index">[0]</td>
@@ -40,7 +42,7 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
     </div>
 
     <div id="form-bottom-controls">
-        <input type="button" value="Добавить элемент" id="add-element-button">
+        <input type="button" value="Добавить элемент" class="add-element-button">
         <input type="submit">
     </div>
 
