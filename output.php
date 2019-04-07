@@ -51,7 +51,7 @@ for ($i = 0; $i < $count; $i++) {
         goto stop_working_and_load_footer;
 
     } elseif (!preg_match('~^\d+(?:$|[\.,]\d+$)~', trim($arr[$i],' '))) {
-        echo 'Элемент "' . $arr[$i] . '\" под индексом [' . $i . '] не является числом. Заканчиваю работу';
+        echo 'Элемент "' . $arr[$i] . '" под индексом [' . $i . '] не является числом. Заканчиваю работу';
         goto stop_working_and_load_footer;
 
     } else {
@@ -71,8 +71,17 @@ if (isset($_POST['algorithm'])) {
     goto stop_working_and_load_footer;
 }
 
+const algorithmNames = [
+    'select' => 'Сортировка выбором',
+    'bubbles' => 'Сортировка пузырьком',
+    'shell' => 'Сортировка Шелла',
+    'gnome' => 'Гномья сортировка',
+    'quick' => 'Быстрая сортировка',
+    'embedded' => 'Встроенная сортировка PHP'
+];
+
 //Нужно вывести его название. Hashmap сделаем потом. Пока что просто echo algorythm
-echo '<h3>Обработка алгоритмом "' . $algorithm . '"</h3>';
+echo '<h3>'.algorithmNames[$algorithm].'</h3>';
 printArray($arr, 'Начальный массив'); echo '<br>';
 
 
@@ -97,6 +106,7 @@ switch ($algorithm) {
         break;
     case 'quick':
         $iterationCount = quickSort($arr);
+        break;
     case 'embedded':
 
         $iterationCount = 0;
