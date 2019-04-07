@@ -24,7 +24,7 @@
 
         </a>
         <!--            <h2 class="header__title"> Лабораторные работы по PHP ️</h2>-->
-        <h2 class="header__title"> <?php echo 'Лабораторная #6. Обработка форм' ?></h2>
+        <h2 class="header__title"> <?php echo 'Лабораторная #7. Сортировка массивов' ?></h2>
     </div>
 
 
