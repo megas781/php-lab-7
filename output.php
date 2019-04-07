@@ -99,6 +99,14 @@ switch ($algorithm) {
         $iterationCount = quickSort($arr);
     case 'embedded':
 
+        $iterationCount = 0;
+
+        usort($arr, function ($arg1, $arg2) {
+            $GLOBALS['iterationCount'] += 1;
+            printArray($GLOBALS['arr'], 'Итерация ' . $GLOBALS['iterationCount']);
+            return $arg1 > $arg2;
+        });
+
         break;
     default:
         break;
