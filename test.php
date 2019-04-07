@@ -45,8 +45,13 @@ $matches = [];
 include_once('util.php');
 
 
+$myArr = [3,2,4,5,1];
+
+$count = selectSort($myArr);
+
+echo 'Всего итераций: ' . $count;
 
 
 
-//echo '<pre>';
-//print_r($matches);
+echo '<pre>';
+print_r($myArr);

@@ -13,8 +13,48 @@ function printArray($arr, $message = '') {
             echo ', ';
 
         } else {
-            echo  "]\n";
+            echo  "]<br>";
         }
     }
 }
+
+//Сортировка выбором
+function selectSort(&$arr) {
+
+    $count = 0;
+
+    for ($i = 0; $i < count($arr) - 1; $i++) {
+
+        $currentMinValue = $arr[$i];
+        $currentMinValueIndex = $i;
+
+        for ($j = $i + 1; $j < count($arr); $j++) {
+
+            if ($arr[$j] < $currentMinValue) {
+
+                $currentMinValue = $arr[$j];
+                $currentMinValueIndex = $j;
+
+            }
+
+        }
+        $arr[$currentMinValueIndex] = $arr[$i];
+        $arr[$i] = $currentMinValue;
+
+        $count += 1;
+        printArray($arr, $i + 1 . ') ');
+    }
+
+    return $count;
+}
+
+//Пузырьковая сортировка
+
+//Алгоритм Шелла
+
+//Алгоритм садового гнома
+
+//Быстрая сортировка
+
+//
 
