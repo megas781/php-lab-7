@@ -22,9 +22,6 @@ define('HTTP_ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/php-lab-7/');
 <?php
 
 
-//Пока что путь будет эмулированным
-//А по идеи здесь мы достаём то, что есть в post
-
 if (isset($_POST['arr'])) {
     $arr = $_POST['arr'];
 } else {
